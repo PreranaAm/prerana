@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Geologica', sans-serif;
+        }
+
+        #section .rk {
+            font-size: 30px;
+        }
+
+        .lo {
+            margin: 11px 34px;
+        }
+
+        .lo img {
+            height: 58px;
+            margin: -23px 5px;
+           width: 42px;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            height: 60px;
+            font-size: 20px;
+            top: 0px;
+            font-size: 22px;
+        }
+
+        #navbar ul {
+            display: flex;
+            overflow: auto;
+            list-style: none;
+        }
+
+        #navbar li a {
+            padding: 2px 34px;
+            text-decoration: none;
+            display: block;
+            color: rgb(127 28 202);
+            border-radius: 15px;
+        }
+
+        #navbar::before {
+            content: " ";
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            top: 0px;
+        }
+
+        #navbar li a:hover {
+            background-color: white;
+            color: rgb(222, 44, 44);
+        }
+
+        #Section {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+
+        #Section::before {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 572px;
+            z-index: -1;
+            background: url("b.jpg") no-repeat center center/cover;
+            top: 0px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 8px;
+            background-color: blueviolet;
+            color: aliceblue;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid rgb(245, 238, 238);
+        }
+
+        #Section p {
+            padding: 0px 30px;
+            font-size: 18px;
+        }
+
+        #section-h {
+            text-align: center;
+        }
+
+        /* services section */
+        #services-section {
+            margin: 0px 17px;
+            display: flex;
+        }
+
+        #services-section .box {
+            border: 2px solid rgb(68, 14, 205);
+            margin: 4px 11px;
+        }
+
+        #services .box img {
+            margin: auto;
+            height: 120px;
+            display: block;
+            padding: 7px 0px;
+        }
+
+        #services .box p {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #services .box {
+            background-color: #deddf8;
+            ;
+            margin: 4px 11px;
+            border-radius: 25px;
+        }
+
+        .h-primary {
+            font-size: 25px;
+            font-family: 'Geologica', sans-serif;
+            color: black;
+        }
+
+        .h-secondary {
+            font-size: 20px;
+            font-family: 'Geologica', sans-serif;
+            color: blueviolet;
+        }
+
+        /* clients section  */
+        #clients::before {
+            content: " ";
+            background: url('bac.jpg')center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 320px;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        #clients {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 22px;
+        }
+
+        #clients .image {
+            padding: 40px;
+        }
+
+        #clients .image img {
+            height: 124px;
+        }
+        #contact-service::before{content:" "; background:url('contact.jpg') no-repeat center center/cover;position: absolute;height:100%;width: 100%;z-index: -1;}
+        #contact-service{position: relative; margin: 22px;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+        .rk{display: block;}
+        .rk input{padding: 10px 60px;border-radius: 10px;border: 2px solid black;margin: 5px;font-size: 15px;}
+        .rk textarea{padding: 10px 105px;border-radius: 10px;border: 2px solid black;margin: 5px;}
+        .rk label{display: block;font-size: 20px;color:white;}
+        .footer{color: aliceblue;}
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="lo">
+            <img src="draw3.jpg" id="">
+        </div>
+        <ul>
+            <li class="item" id="b1"><a href=" ">Home</a></li>
+            <li class="item" id="b2"><a href=" ">About us</a></li>
+            <li class="item" id="b3"><a href=" ">Contact us</a></li>
+            <li class="item" id="b4"><a href=" ">Art Gallery</a></li>
+        </ul>
+    </div>
+    <section id="Section">
+        <h2 class="h-primary center rk">Welcome to Radhekrishna Art Class</h2>
+        <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae culpa ab eaque laudantium
+            voluptates doloremque molestias excepturi doloribus minima cupiditate?</p>
+        <p class="center"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae culpa ab eaque laudantium
+            voluptates doloremque molestias</p>
+        <button class="btn">Join now</button>
+    </section>
+    <section id="services">
+        <h1 class=" h-primary center">Our Art Gallery</h1>
+        <div id="services-section">
+            <div class="box">
+                <img src="draw1.jpg">
+                <h1 class=" h-secondary center">Pattern art</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptate rem minus enim ipsa sit
+                    consequuntur quia, aliquid corrupti, sint tempore vel itaque magni! Sapiente dolorem placeat
+                    aspernatur earum laboriosam accusamus libero, praesentium illum?</p>
+            </div>
+            <div class="box">
+                <img src="draw2.jpg">
+                <h1 class=" h-secondary center">Paint art</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptate rem minus enim ipsa sit
+                    consequuntur quia, aliquid corrupti, sint tempore vel itaque magni! Sapiente dolorem placeat
+                    aspernatur earum laboriosam accusamus libero, praesentium illum?</p>
+            </div>
+            <div class="box">
+                <img src="draw3.jpg">
+                <h1 class=" h-secondary center">Pencil art</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptate rem minus enim ipsa sit
+                    consequuntur quia, aliquid corrupti, sint tempore vel itaque magni! Sapiente dolorem placeat
+                    aspernatur earum laboriosam accusamus libero, praesentium illum?</p>
+            </div>
+        </div>
+    </section>
+    <section id="clients-section">
+        <h1 class=" h-primary center">Our clients</h1>
+        <div id="clients">
+            <div class="image">
+                <img src="sw.jpg">
+            </div>
+            <div class="image">
+                <img src="apple.jpg">
+            </div>
+            <div class="image">
+                <img src="sw.jpg">
+            </div>
+        </div>
+    </section>
+    <footer id="contact-service">
+        <h1 class="h-primary center">You can reach us on</h1>
+        <div id="contact">
+            
+        <form action="">
+            <div class="rk">
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Enter the name">
+            </div>
+            <div class="rk">
+                <label for="name">Email-id:</label>
+                <input type="text" name="name" placeholder="Enter the Email-id">
+            </div>
+            <div class="rk">
+                <label for="name">Gender:</label>
+                <input type="text" name="name" placeholder="Enter the Gender">
+            </div>
+            <div class="rk">
+                <label for="name">Phone:</label>
+                <textarea rows="10" cols="10">Comment Below</textarea>
+            </div>
+            <div class="footer">Copyright &copy All Rights are reserved!!</div>
+        </form>
+        </div>
+    </footer>
+    <section>
+        
+
+    </section>
+
+
+
+</body>
+
+</html>
