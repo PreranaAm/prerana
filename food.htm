@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radhekrishna Food delivary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <style>
+        :root {
+            --navbar-height: 59px;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* for navbar and inside elements */
+
+        #navbar {
+            position: relative;
+            font-size: 20px;
+            height: 60px;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #logo {
+            margin: 10px 34px;
+        }
+
+        #logo img {filter: invert();
+            margin: 3px 5px;
+            height: 50px;
+        }
+
+        #navbar ul {
+            display: flex;
+            overflow: auto;
+        }
+
+        #navbar ul li {
+            list-style: none;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            display: block;
+            padding: 3px 26px;
+            border-radius: 25px;
+            color: white;
+        }
+
+        #navbar::before {
+            content: " ";
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar li a:hover {
+            color: black;
+            background-color: aliceblue;
+        }
+
+        /* for home we have css */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 22px;
+            justify-content: center;
+            align-items: center;
+            height: 590px;
+            font-family: 'Geologica', sans-serif;
+        }
+
+        #home::before {
+            content: " ";
+            background: url("food.jpg") no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 672px;
+            z-index: -1;
+            opacity: 0.89;
+            top: 0px;
+        }
+
+        #home h1 {
+            color: aliceblue;
+            text-align: center;
+        }
+
+        #home p {
+            color: aliceblue;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* utility classes */
+        .h-primary {
+            font-size: 40px;
+            padding: 24px;
+            font-family: 'Geologica', sans-serif;
+        }
+
+        .h-secondary {
+            font-size: 28px;
+            padding: 24px;
+            font-family: 'Geologica', sans-serif;
+        }
+
+        .btn {
+            padding: 4px 18px;
+            border: 2px solid white;
+            background-color: rgb(140, 14, 243);
+            color: aliceblue;
+            margin: 17px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+
+        /* srvices section */
+        .center {
+            text-align: center;
+        }
+
+        #services {
+            margin: 0px 34px;
+            display: flex;
+        }
+
+        #services .box img {
+            height: 120px;
+            margin: auto;
+            display: block;
+        }
+
+        #services .box {
+            border: 2px solid rgb(121, 14, 237);
+            margin: 3px 5px;
+            border-radius: 25px;
+            background-color: rgb(239, 236, 234);
+        }
+
+        #services .box p {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0px 2px;
+            margin: 0px 5px;
+        }
+
+        /* clients service */
+        #client-section {
+            width: 100vw;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #client-section {
+            position: relative;
+        }
+
+        #client-section::before {
+            content: " ";
+            background: url("r.jpg") no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+            margin: 22px;
+        }
+
+        #clients img {
+            height: 124px;
+        }
+
+        .client-item {
+            padding: 34px;
+        }
+
+        /* contact box */
+        #contact {
+            position: relative;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 18px;
+        }
+
+        #contact::before {
+            position: absolute;
+            content: " ";
+            background: url('contact.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 600px;
+            z-index: -1;
+            opacity: 0.7
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.5rem;
+            font-family: 'Geologica', sans-serif;
+        }
+
+        #contact {
+            padding: 22px;
+        }
+
+        .footer {
+
+            color: rgb(244, 248, 251);
+            padding: 9px 20px;
+
+
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="food3.jpg" alt="Radhekrishna food">
+        </div>
+        <ul>
+            <li class="item"><a href="">Home</a></li>
+            <li class="item"><a href="">Services</a></li>
+            <li class="item"><a href="">About us</a></li>
+            <li class="item"><a href="">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary center">Welcome to Radhekrishna meal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rem nihil similique aut</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, eius.</p>
+        <button class="btn">Order now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-secondary center">Our Services </h1>
+        <div id="services">
+            <div class="box">
+                <img src="radhe.jpg" alt="">
+                <h2 class="h-secondary center">Food ordering</h2>
+                <p class="=center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis excepturi
+                    quisquam exercitationem quo, expedita id cupiditate, recusandae asperiores doloribus illo repellat.
+                    Voluptatem fuga alias omnis exercitationem nihil beatae recusandae cum tempora quam cumque.</p>
+
+            </div>
+            <div class="box">
+                <img src="radhe2.jpg" alt="">
+                <h2 class="h-secondary center">Bulk ordering</h2>
+                <p class="=center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis excepturi
+                    quisquam exercitationem quo, expedita id cupiditate, recusandae asperiores doloribus illo repellat.
+                    Voluptatem fuga alias omnis exercitationem nihil beatae recusandae cum tempora quam cumque.</p>
+
+            </div>
+            <div class="box">
+                <img src="food2.jpg" alt="">
+                <h2 class="h-secondary center">Food delivary</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis excepturi
+                    quisquam exercitationem quo, expedita id cupiditate, recusandae asperiores doloribus illo repellat.
+                    Voluptatem fuga alias omnis exercitationem nihil beatae recusandae cum tempora quam cumque.</p>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="h-secondary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="apple.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="sw.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="apple.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="sw.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-secondary center">Contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="from-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" value="Enter your name">
+                </div>
+                <div class="from-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="email" value="Enter your name">
+                </div>
+                <div class="from-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="phone" value="Enter your name">
+
+
+                </div>
+                <div class="from-group">
+                    <label for="name">Name:</label>
+                    <textarea name="message" id="message" cols="5" rows="5"></textarea>
+                </div>
+                <div class="center footer">
+                    Copyright &copy; All right are reserved
+
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
